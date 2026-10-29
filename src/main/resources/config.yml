@@ -1,0 +1,57 @@
+# MaxNetwork Hub Configuration
+
+# ============================================================
+# GUI CUSTOMIZATION
+# All material names must be valid Bukkit Material enum values
+# ============================================================
+gui:
+  pin:
+    verify_title: "&0&lEnter Your PIN"
+    register_title: "&0&lCreate Your PIN"
+    size: 54
+    key_material: LIME_STAINED_GLASS_PANE
+    filled_material: GREEN_STAINED_GLASS_PANE
+    empty_material: WHITE_STAINED_GLASS_PANE
+    clear_material: RED_STAINED_GLASS_PANE
+    background_material: BLACK_STAINED_GLASS_PANE
+  selector:
+    title: "&0&lSelect Your Server"
+    size: 27
+    fill_empty: true
+    fill_material: GRAY_STAINED_GLASS_PANE
+
+# Fallback server list — used only if no server data is sent by the proxy
+# (Normally the proxy sends the selector config; this is a local fallback only)
+servers:
+  main:
+    display: "&a&lMain Survival"
+    material: GRASS_BLOCK
+    slot: 11
+    lore:
+      - "&7The main survival world"
+      - "&eClick to join!"
+  arabic:
+    display: "&6&lArabic Server"
+    material: SANDSTONE
+    slot: 15
+    lore:
+      - "&7Friends server"
+      - "&eClick to join!"
+  hub:
+    display: "&b&lHub/Lobby"
+    material: BEACON
+    slot: 13
+    lore:
+      - "&7The central lobby"
+      - "&eClick to join!"
+
+messages:
+  prefix: "&b[MaxNetwork] &r"
+  pin_create: "&ePlease enter your 4-digit PIN"
+  pin_verify: "&eEnter your PIN"
+  pin_success: "&aVerified!"
+  pin_fail: "&cWrong PIN. Try again."
+  connected: "&aConnecting to &e%server%..."
+  no_pin_set: "&cYou need to set a PIN first."
+
+bungeecord_channel: "BungeeCord"

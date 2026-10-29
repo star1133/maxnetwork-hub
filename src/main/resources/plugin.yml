@@ -1,0 +1,20 @@
+name: MaxNetwork-Hub
+version: 2.0.0
+main: com.max12311.maxnetworkhub.MaxNetworkHub
+description: Auto-flow authentication and server selector for MaxNetwork
+api-version: '1.21'
+author: max12311
+
+commands:
+  mnadmin:
+    description: "MaxNetwork Admin Panel"
+    usage: "/mnadmin [move|kick|ban|broadcast|whitelist|gui]"
+    permission: maxnetwork.admin
+  mnsetup:
+    description: "MaxNetwork Setup Wizard — configure routing, servers, and GUI"
+    usage: "/mnsetup [target <serverName>]"
+    permission: maxnetwork.admin
+  mnstats:
+    description: "MaxNetwork Network Statistics GUI"
+    usage: "/mnstats"
+    permission: maxnetwork.admin
